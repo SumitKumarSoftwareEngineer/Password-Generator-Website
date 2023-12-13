@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #f9d5ff;
+  color: #0c0909;
+}
+.container {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px 52px;
+  display: flex;
+  width: 35rem;
+
+  margin: 20px 10% 0px 30%;
+  flex-direction: column;
+  background: -webkit-linear-gradient(#b99afd, #d579ce);
+}
+
+.pass-indicator {
+  width: 100%;
+  height: 4px;
+  position: relative;
+
+  background: #dfdfdf;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+}
+
+.pass-indicator::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before {
+  width: 20%;
+  background: #e64a4a;
+}
+.pass-indicator#medium::before {
+  width: 50%;
+  background: #f1c80b;
+}
+.pass-indicator#strong::before {
+  width: 100%;
+  background: seagreen;
+}
+
+.container h1 {
+  margin-block: 10px;
+}
+.icon {
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  font-size: 28px;
+  cursor: pointer;
+  bottom: 25px;
+  left: 340px;
+}
+.passBox {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 20px;
+  text-overflow: ellipsis;
+}
+.horizontal {
+  display: flex;
+  margin-block: 8px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.horizontal p {
+  flex-basis: 100%;
+  font-size: 18px;
+}
+.option label {
+  display: flex;
+
+  margin-block: 8px;
+
+  font-size: 18px;
+  margin: 10px;
+}
+.option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.gnbtn {
+  border: none;
+  background-color: rgb(78, 78, 249);
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-block: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.gnbtn:hover {
+  background-color: rgb(3, 3, 252);
+}
+
+#lowercase {
+  position: relative;
+  left: 300px;
+  bottom: 25px;
+}
+
+#uppercase {
+  position: relative;
+  left: 300px;
+  bottom: 25px;
+}
+
+#numbers {
+  position: relative;
+  left: 300px;
+  bottom: 25px;
+}
+
+#symbols {
+  position: relative;
+  left: 300px;
+  bottom: 25px;
+}
+#spaces {
+  position: relative;
+  left: 300px;
+  bottom: 25px;
+}
+h1 {
+  position: relative;
+  left: 30px;
+}
+.option {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+#inputslider {
+  width: 100%;
+  height: 5px;
+}
+#inputslider .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  border: 0.5px solid black;
+  background-color: #1a1717;
+
+  color: white;
+
+  text-align: center;
+
+  position: relative;
+  font-weight: bold;
+}
+h1 {
+  position: relative;
+
+  top: 15px;
+  font-weight: 600;
+}
+.home {
+  text-align: end;
+  position: relative;
+  color: #140b0b;
+  font-size: large;
+
+  bottom: 10px;
+  right: 10px;
+}
+body > nav > div > ul > li:nth-child(1) > a {
+  position: relative;
+  right: 5%;
+}
+body > nav > div > ul > li:nth-child(2) > a {
+  position: relative;
+  bottom: 20px;
+}
